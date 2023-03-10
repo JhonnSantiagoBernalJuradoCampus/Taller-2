@@ -1,4 +1,9 @@
-let corriente = parseFloat(prompt("Ingrese la intensidad de la corriente Amperio (A)"));
-let resistencia = parseFloat(prompt("Ingrese la resistencia Ohmio (Ω)"))
-let voltaje = (corriente*resistencia)
-alert(`El voltaje es ${voltaje} Voltios (V)`)
+let nombre = [];
+let edad = [];
+
+for (let i = 1; i < 4; i++) {
+    nombre.unshift((prompt(`Ingrese el nombre ${i}`)))
+    edad.unshift(Number(prompt(`Ingrese la edad ${i}`)))
+}
+posicion = edad.indexOf(Math.max(...edad))
+alert(`La persona con mayor edad es ${nombre[posicion]} con una edad de ${edad[posicion]} años`)
