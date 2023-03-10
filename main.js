@@ -1,9 +1,12 @@
-let nombre = [];
-let edad = [];
-
-for (let i = 1; i < 4; i++) {
-    nombre.unshift((prompt(`Ingrese el nombre ${i}`)))
-    edad.unshift(Number(prompt(`Ingrese la edad ${i}`)))
+let num = Number(prompt("Ingrese el primer numero"));
+let num2 = Number(prompt("Ingrese el segundo numero"));
+if (num > num2) {
+    let suma = num + num2;
+    let diferencia = num - num2;
+    alert(`La suma de los numeros ${num} y ${num2} = ${suma}\nY su diferencia es de ${diferencia}`);
 }
-posicion = edad.indexOf(Math.max(...edad))
-alert(`La persona con mayor edad es ${nombre[posicion]} con una edad de ${edad[posicion]} años`)
+else {
+    let producto = num * num2;
+    let division = num2 / num;
+    alert(`El producto de los numeros ${num} y ${num2} = ${producto}\nY su division es ${division}`);
+}
