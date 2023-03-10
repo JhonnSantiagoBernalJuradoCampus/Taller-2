@@ -1,21 +1,15 @@
-function notas() {
-    let nota = parseFloat(prompt("Ingrese la nota 1"));
-    let nota2 = parseFloat(prompt("Ingrese la nota 2"));
-    let nota3 = parseFloat(prompt("Ingrese la nota 3"));
-    let promedio = ((nota + nota2 + nota3) / 3);
-    if (promedio >= 3.9, promedio <= 5) {
-        alert("Becado")
+let num = prompt("Ingrese un numero");
+function par() {
+    return (num%2) == 0
+}
+if (par() == true) {
+    if (num > 10) {
+        alert(`Su numero ${num} es par y mayor que 10`)
     }
-    else if (promedio >= 0, promedio < 3.9){
-        alert("Estudie")
-    }
-    else{
-        alert("Ingrese datos que correspondan")
-        notas()
-    }
-    let decision = prompt("Desea seguir digitando notas?\n\t1.Si\n\t2.No")
-    if (decision == 1) {
-        notas()
+    else {
+        alert(`Su numero ${num} es par y menor a 10`)
     }
 }
-notas()
+else {
+    alert(`Su numero ${num} es impar`)
+}
