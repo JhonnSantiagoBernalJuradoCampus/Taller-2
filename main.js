@@ -1,15 +1,4 @@
-let num = prompt("Ingrese un numero");
-function par() {
-    return (num%2) == 0
-}
-if (par() == true) {
-    if (num > 10) {
-        alert(`Su numero ${num} es par y mayor que 10`)
-    }
-    else {
-        alert(`Su numero ${num} es par y menor a 10`)
-    }
-}
-else {
-    alert(`Su numero ${num} es impar`)
-}
+let corriente = parseFloat(prompt("Ingrese la intensidad de la corriente Amperio (A)"));
+let resistencia = parseFloat(prompt("Ingrese la resistencia Ohmio (Ω)"))
+let voltaje = (corriente*resistencia)
+alert(`El voltaje es ${voltaje} Voltios (V)`)
