@@ -1,10 +1,6 @@
-let nombre = prompt("Ingrese el nombre del articulo");
-let precio = Number(prompt("Ingrese el valor del producto"))
-let cantidad = Number(prompt("Ingrese la cantidad que desea comprar"))
-alert(` - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n
-\tArticulo:\t\t${nombre}\n
-\tPrecio c/u:\t\t${precio} $\n
-\tCantidad:\t\t${cantidad}\n
-\tPrecio total:\t${(precio*cantidad)} $\n
-\tMuchas gracias por su compra\n
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -`)
+let lado = Number(prompt("Ingrese el lado del cuadrado en cm"));
+let base = Number(prompt("Ingrese la base del rectangulo en cm"));
+let altura = Number(prompt("Ingrese la altura del rectangulo en cm"));
+let perimetro = (lado*4)
+let areaR = (base*altura)
+alert(`El perimetro del cuadradro es ${perimetro} cm\nEl area del rectangulo es ${areaR} cm`);
